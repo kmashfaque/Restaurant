@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0
+}
+
+
+.card{
+   background-color:cadetblue;
+    font-size: 3rem;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+
+}
+.card-title{
+    color: cadetblue;
+    background-color: black;
+    padding: 20px;
+    margin: 25px;
+    text-align:center;
+    font-size: 1.5rem;
+
+
+}
+.card-desc{
+    color: cadetblue;
+    background-color: black;
+    padding: 20px;
+    margin: 25px;
+    text-align:center;
+    font-size: 1.5rem;
+
+
+}
+.card-body{
+    color: cadetblue;
+    background-color: black;
+    padding: 20px;
+    margin: 25px;
+    text-align:center;
+    font-size: 1.5rem;
+
+
+
+}
+.card-footer{
+    color: cadetblue;
+    background-color: black;
+    padding: 20px;
+    margin: 25px;
+    text-align:center;
+    font-size: 1.5rem;
+
+
+}
+
+button{
+
+    width:150px;
+    height: 100px;
+    margin: 25px;
+    font-size: 3rem;
+    color: cadetblue;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+}
+.button-1{
+
+    width:50px;
+    height: 50px;
+    margin: 25px;
+    font-size: .8rem;
+    color: cadetblue;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.button-2{
+
+    width:80px;
+    height: 50px;
+    margin: 25px;
+    font-size: .8rem;
+    color: cadetblue;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.button-3{
+
+    width:80px;
+    height: 50px;
+    margin: 25px;
+    font-size: .8rem;
+    color: cadetblue;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+input{
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+p{
+    color: red;
+    font-weight: bold;
+}
+
+.fst{
+
+    margin: 10px;
+  
+    font-weight: bold;
+}
+.easy{
+    margin: 20px;
+    color: white;
+}
