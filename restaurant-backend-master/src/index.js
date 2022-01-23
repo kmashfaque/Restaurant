@@ -1,6 +1,7 @@
 import dotenv from "dotenv"
 import express from "express"
 import connectDB from "./config/db.js"
+import categoryRouter from './routes/category.router.js'
 import orderRouter from "./routes/orderRouter.js"
 import productRouter from "./routes/productRouter.js"
 import userRouter from "./routes/user.router.js"
@@ -15,6 +16,7 @@ app.use(express.json())
 // routes
 app.use('/api/user', userRouter)
 app.use('/api/product', productRouter)
+app.use('/api/category', categoryRouter)
 app.use('/api/order', orderRouter)
 
 // port

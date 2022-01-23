@@ -3,7 +3,6 @@ import shortid from 'shortid'
 import User from '../models/user.model.js'
 
 export const Signup = (req, res) => {
-  
     User.findOne({email: req.body.email}).exec( async (error, user) => {
         if(user){
             res.status(400).json({
@@ -11,7 +10,7 @@ export const Signup = (req, res) => {
             });
         }
             const { firstName, lastName, email, password } = req.body;
-            // console.log(req.body);
+
             const hash_password = await bcrypt.hash(password, 10)
 
             const _user = new User({
@@ -21,8 +20,6 @@ export const Signup = (req, res) => {
                 password: hash_password,
                 userName: firstName + '-' + shortid.generate()
             });
-
-            // console.log(_user);
 
             _user.save((error, data) => {
                 if(error){
