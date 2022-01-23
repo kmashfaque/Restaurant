@@ -1,5 +1,6 @@
 import dotenv from "dotenv"
 import express from "express"
+import path from 'path'
 import connectDB from "./config/db.js"
 import categoryRouter from './routes/category.router.js'
 import orderRouter from "./routes/orderRouter.js"
@@ -13,6 +14,10 @@ dotenv.config()
 connectDB()
 
 app.use(express.json())
+
+// image url
+const __dirname = path.resolve()
+app.use('/public', express.static(path.join(__dirname, 'uploads')))
 // routes
 app.use('/api/user', userRouter)
 app.use('/api/product', productRouter)
